@@ -10,7 +10,7 @@ class BusArrived extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: whiteColor,
+      color: secondryColor,
       child: Stack(
         children: [
           Scaffold(
@@ -30,21 +30,21 @@ class BusArrived extends StatelessWidget {
                   ),
                   Text(
                     'The Bus Has Arrived',
-                    style: TextStyle(fontWeight: FontWeight.w400, fontSize: 32,),
+                    style: TextStyle(fontWeight: FontWeight.w400, fontSize: 32,color: whiteColor),
                   ),
                   SizedBox(
                     height: 15,
                   ),
                   Text(
                     'When the bus arrives infront of your house',
-                    style: TextStyle(fontSize: 15,),
+                    style: TextStyle(fontSize: 15,color: whiteColor),
                   ),
                   SizedBox(
                     height: 15,
                   ),
                   Text(
                     'you will be notified of its arrival',
-                    style: TextStyle(fontSize: 15,),
+                    style: TextStyle(fontSize: 15,color: whiteColor),
                   ),
                   SizedBox(
                     height: 20,

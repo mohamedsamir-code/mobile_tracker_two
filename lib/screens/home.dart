@@ -8,39 +8,24 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        toolbarHeight: 100,
-        backgroundColor: secondryColor,
-        centerTitle: true,
-        title: Padding(
-          padding: EdgeInsets.only(
-            top: 50,
-          ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Image.asset('assets/bus_logo.PNG'),
-              SizedBox(
-                width: 5,
-              ),
-              Text(
-                'iSchool Bus',
-                style: TextStyle(
-                  color: whiteColor,
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
+    return Container(color: secondryColor,child: Stack(children: [Scaffold(
+      backgroundColor: Colors.transparent,
       body: Column(
         children: [
-          Container(
-            color: primaryColor,
-            width: double.infinity,
-            height: 5,
-          ),
+          SizedBox(height: 30,),
+          Padding(child: Container(
+            width: 396,
+            height: 66,
+            decoration: BoxDecoration(color: Color(0xffc1cbd1),borderRadius: BorderRadius.all(Radius.circular(20))),
+            child: Row(
+              children: [
+                SizedBox(width: 10,),
+                Image.asset('assets/parent_logo.png'),
+                SizedBox(width: 50,),
+                Text('Student Home Road',style: TextStyle(fontSize: 20),),
+              ],
+            ),
+          ),padding: EdgeInsets.all(15,)),
           SizedBox(
             height: 15,
           ),
@@ -52,7 +37,7 @@ class Home extends StatelessWidget {
               height: 166,
               width: 396,
               decoration: BoxDecoration(
-                color: secondryColor,
+                color: Color(0xffc1cbd1),
                 borderRadius: BorderRadius.all(
                   Radius.circular(
                     25,
@@ -67,15 +52,15 @@ class Home extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      Text('Ahmed Mohamed',style: TextStyle(color: whiteColor,fontWeight: FontWeight.w400,fontSize: 16),),
+                      Text('Ahmed Mohamed',style: TextStyle(fontWeight: FontWeight.w400,fontSize: 16),),
                       SizedBox(height: 5,),
-                      Text('Class 5-c',style: TextStyle(color: whiteColor,fontWeight: FontWeight.w400,fontSize: 12),),
+                      Text('Class 5-C',style: TextStyle(color: Colors.grey[700],fontWeight: FontWeight.w400,fontSize: 12),),
                       SizedBox(height: 5,),
                       Row(
                         children: [
-                          Text('Time to go out',style: TextStyle(color: whiteColor,fontWeight: FontWeight.w400,fontSize: 12),),
+                          Text('Time to go out',style: TextStyle(color: Colors.grey[700],fontWeight: FontWeight.w400,fontSize: 12),),
                           SizedBox(width: 5,),
-                          Text('2.00',style: TextStyle(color: primaryColor,fontWeight: FontWeight.w400,fontSize: 12),),
+                          Text('2.00',style: TextStyle(color: Colors.orange,fontWeight: FontWeight.w400,fontSize: 12),),
                         ],
                       ),
                       SizedBox(height: 5,),
@@ -83,15 +68,21 @@ class Home extends StatelessWidget {
                         children: [
                           CircleAvatar(backgroundColor: Colors.green,radius: 5),
                           SizedBox(width: 5,),
-                          Text('In Bus',style: TextStyle(color: whiteColor,fontWeight: FontWeight.w400,fontSize: 13),),
+                          Text('In Bus',style: TextStyle(fontWeight: FontWeight.w400,fontSize: 13),),
                         ],
                       ),
                       SizedBox(height: 5,),
-                      Icon(Icons.info_outline,color: whiteColor,)
+                      Row(
+                        children: [
+                          Icon(Icons.info,color: Colors.orange,),
+                          SizedBox(width: 5,),
+                          Text('Bus Info')
+                        ],
+                      )
                     ],
                   ),
                   SizedBox(width: 10,),
-                  Container(width: 90,height: 33,decoration: BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(10),),color: Color(0xffd8d8d8),),child: Padding(padding: EdgeInsets.only(top: 5),child: Text('Track',textAlign: TextAlign.center)),)
+                  Container(width: 90,height: 33,decoration: BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(10),),color: Color(0xff98bbff),),child: Padding(padding: EdgeInsets.only(top: 5),child: Text('Track',textAlign: TextAlign.center)),)
                 ],
               ),),
             ),
@@ -107,7 +98,7 @@ class Home extends StatelessWidget {
               height: 166,
               width: 396,
               decoration: BoxDecoration(
-                color: secondryColor,
+                color: Color(0xffc1cbd1),
                 borderRadius: BorderRadius.all(
                   Radius.circular(
                     25,
@@ -123,15 +114,15 @@ class Home extends StatelessWidget {
                     //mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       SizedBox(height: 25,),
-                      Text('Hour Mohamed',style: TextStyle(color: whiteColor,fontWeight: FontWeight.w400,fontSize: 16),),
+                      Text('Hour Mohamed',style: TextStyle(fontWeight: FontWeight.w400,fontSize: 16),),
                       SizedBox(height: 5,),
-                      Text('Class 4-a',style: TextStyle(color: whiteColor,fontWeight: FontWeight.w400,fontSize: 12),),
+                      Text('Class 4-A',style: TextStyle(color: Colors.grey[700],fontWeight: FontWeight.w400,fontSize: 12),),
                       SizedBox(height: 5,),
                       Row(
                         children: [
-                          Text('Time to go out',style: TextStyle(color: whiteColor,fontWeight: FontWeight.w400,fontSize: 12),),
+                          Text('Time to go out',style: TextStyle(color: Colors.grey[700],fontWeight: FontWeight.w400,fontSize: 12),),
                           SizedBox(width: 5,),
-                          Text('12.00',style: TextStyle(color: primaryColor,fontWeight: FontWeight.w400,fontSize: 12),),
+                          Text('12.00',style: TextStyle(color: Colors.orange,fontWeight: FontWeight.w400,fontSize: 12),),
                         ],
                       ),
                       SizedBox(height: 5,),
@@ -139,19 +130,26 @@ class Home extends StatelessWidget {
                         children: [
                           CircleAvatar(backgroundColor: Colors.green,radius: 5),
                           SizedBox(width: 5,),
-                          Text('In School',style: TextStyle(color: whiteColor,fontWeight: FontWeight.w400,fontSize: 13),),
+                          Text('In Bus',style: TextStyle(fontWeight: FontWeight.w400,fontSize: 13),),
                         ],
                       ),
+                      SizedBox(height: 5,),
+                      Row(
+                        children: [
+                          Icon(Icons.info,color: Colors.orange,),
+                          SizedBox(width: 5,),
+                          Text('Bus Info')
+                        ],
+                      )
                     ],
                   ),
                   SizedBox(width: 10,),
-                  Container(width: 90,height: 33,decoration: BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(10),),color: Color(0xffd8d8d8),),child: Padding(padding: EdgeInsets.only(top: 5),child: Text('Track',textAlign: TextAlign.center)),)
+                  Container(width: 90,height: 33,decoration: BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(10),),color: Color(0xff98bbff),),child: Padding(padding: EdgeInsets.only(top: 5),child: Text('Track',textAlign: TextAlign.center)),)
                 ],
               ),),
-            ),
-          ),
+            ),),
         ],
       ),
-    );
+    )],),);
   }
 }
