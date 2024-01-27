@@ -63,11 +63,9 @@ class _LoginState extends State<Login> {
                       SizedBox(
                         height: 20,
                       ),
-                      Padding(padding: EdgeInsets.only(right: 200,),child: Text('Welcome To',style: TextStyle(color: primaryColor,fontWeight: FontWeight.bold,fontSize: 20.0),),),
+                      Padding(padding: EdgeInsets.only(right: 140,),child: Text('Welcome To iSchool Bus',style: TextStyle(color: primaryColor,fontWeight: FontWeight.bold,fontSize: 20.0),),),
                       // SizedBox(height: 1.0,),
                       // Padding(padding: EdgeInsets.only(right: 285,),child: Text('ISB',style: TextStyle(color: primaryColor,fontWeight: FontWeight.bold,fontSize: 20.0),),),
-                      SizedBox(height: 2.0,),
-                      Padding(padding: EdgeInsets.only(right: 200,),child: Text('iSchool Bus',style: TextStyle(color: primaryColor,fontWeight: FontWeight.bold,fontSize: 20.0),),),
                       // SizedBox(height: 1.0,),
                       // Padding(padding: EdgeInsets.only(right: 285,),child: Text('ISB',style: TextStyle(color: primaryColor,fontWeight: FontWeight.bold,fontSize: 20.0),),),
                       SizedBox(height: 15.0,),
