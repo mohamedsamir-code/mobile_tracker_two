@@ -44,7 +44,7 @@ class _LoginState extends State<Login> {
     var emailController = TextEditingController();
     var formValidate = GlobalKey<FormState>();
     return Container(
-      color: secondryColor,
+      color: whiteColor,
       child: Stack(
         children: [
           Scaffold(

@@ -28,7 +28,7 @@ class _RegisterState extends State<Register> {
     var userNameController = TextEditingController();
     var formValidate = GlobalKey<FormState>();
     return Container(
-      color: secondryColor,
+      color: whiteColor,
       child: Stack(
         children: [
           Scaffold(
@@ -227,8 +227,21 @@ class _RegisterState extends State<Register> {
                               print(phoneController.text);
                               var message = await provider.signUp(emailController.text, passwordController.text, confirmPasswordController.text, userNameController.text,phoneController.text);
                               //var m = await provider.verifyWithPhone(phoneController.text);
-                              if(message == 'Done'){
-                                Navigator.pushNamedAndRemoveUntil(context, Home.routeName, (route) => false);
+                              if(message.isNotEmpty){
+                                showDialog(
+                                  context: context,
+                                  builder: (context) {
+                                    return AlertDialog(
+                                      title: Text('Sucessfully Signed Up'),
+                                      actions: [
+                                        TextButton(
+                                          onPressed: () => Navigator.pushNamedAndRemoveUntil(context, Home.routeName, (route) => false),
+                                          child: Text('ok'),
+                                        ),
+                                      ],
+                                    );
+                                  },
+                                );
                               }else{
                                 DialogUtils.showDialogMessage(context, message);
                               }

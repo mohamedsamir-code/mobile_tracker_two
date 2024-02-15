@@ -10,7 +10,7 @@ class BusArrived extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: secondryColor,
+      color: whiteColor,
       child: Stack(
         children: [
           Scaffold(

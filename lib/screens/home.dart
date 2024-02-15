@@ -8,7 +8,7 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(color: secondryColor,child: Stack(children: [Scaffold(
+    return Container(color: whiteColor,child: Stack(children: [Scaffold(
       backgroundColor: Colors.transparent,
       body: Column(
         children: [
