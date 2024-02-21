@@ -15,7 +15,7 @@ class ForgotPassword extends StatelessWidget {
     var emailController = TextEditingController();
     var formValidate = GlobalKey<FormState>();
     return Container(
-      color: whiteColor,
+      color: thirdColor,
       child: Stack(
         children: [
           Scaffold(

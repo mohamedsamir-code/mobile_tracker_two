@@ -12,7 +12,7 @@ class BusInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: whiteColor,
+      backgroundColor: thirdColor,
       // appBar: AppBar(
       //   backgroundColor: Colors.transparent,
       //   elevation: 0,
@@ -58,7 +58,7 @@ class BusInfo extends StatelessWidget {
                     //    Image.asset('assets/supervisor_logo.png',height: 40,width: 40,),
                     InkWell(
                       child: Image.asset(
-                        'assets/supervisor_logo.png',
+                        'assets/parent_logo.png',
                         height: 40,
                         width: 40,
                       ),
@@ -191,6 +191,18 @@ class BusInfo extends StatelessWidget {
               subtitle: Text('📞 01002454242'),
             ),
           ),
+            SizedBox(height: 20),
+            Card(
+              color: Color(0xffc1cbd1),
+              child: ListTile(
+                leading: Column(children: [
+                  Text('Supervisor',style: TextStyle(color: Colors.black,fontSize: 10,),),
+                  Image.asset('assets/supervisor.png',width: 47,height: 41,)
+                ],),
+                title: Text('Razan Mohamed'),
+                subtitle: Text('📞 01002454242'),
+              ),
+            ),
         ],
       ),),
     );

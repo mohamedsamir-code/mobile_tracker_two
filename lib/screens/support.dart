@@ -13,7 +13,7 @@ class Support extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(children: [
       Container(
-          color: whiteColor,
+          color: thirdColor,
           child: Scaffold(
               backgroundColor: Colors.transparent,
             body: Padding(padding: EdgeInsets.all(11.4),child: Column(
@@ -39,7 +39,7 @@ class Support extends StatelessWidget {
                             ),
                             InkWell(
                               child: Image.asset(
-                                'assets/supervisor_logo.png',
+                                'assets/parent_logo.png',
                                 height: 40,
                                 width: 40,
                               ),

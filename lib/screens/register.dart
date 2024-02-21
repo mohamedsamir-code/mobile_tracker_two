@@ -28,7 +28,7 @@ class _RegisterState extends State<Register> {
     var userNameController = TextEditingController();
     var formValidate = GlobalKey<FormState>();
     return Container(
-      color: whiteColor,
+      color: thirdColor,
       child: Stack(
         children: [
           Scaffold(

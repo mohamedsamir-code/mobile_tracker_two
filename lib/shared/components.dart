@@ -38,6 +38,7 @@ Widget defaultFormField({
   VoidCallback? suffixPressed,
 }) =>
     TextFormField(
+      style: TextStyle(color: Colors.white),
       controller: controller,
       keyboardType: type,
       onChanged: (value) {
@@ -49,9 +50,9 @@ Widget defaultFormField({
       },
       decoration: InputDecoration(
         labelText: label,
-        labelStyle: TextStyle(color: Colors.grey),
+        labelStyle: TextStyle(color: Colors.white),
         suffixIcon: IconButton(
-          color: Colors.grey,
+          color: Colors.white,
           onPressed: suffixPressed,
           icon: suffix != null
               ? Icon(

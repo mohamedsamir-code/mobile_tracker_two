@@ -9,7 +9,7 @@ class Profile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: whiteColor,
+      backgroundColor: thirdColor,
       appBar: AppBar(
         leading: IconButton(
           icon: Icon(Icons.arrow_back, color: Colors.white),
@@ -46,24 +46,30 @@ class Profile extends StatelessWidget {
               ),
               SizedBox(height: 30),
               TextFormField(
+                style: TextStyle(color: Colors.white),
                 decoration: InputDecoration(
                   labelText: 'Full Name',
+                  labelStyle: TextStyle(color: Colors.white),
                   border: OutlineInputBorder(),
                 ),
                 initialValue: 'Ahmed Mohamed',
               ),
               SizedBox(height: 10),
               TextFormField(
+                style: TextStyle(color: Colors.white),
                 decoration: InputDecoration(
                   labelText: 'Email',
+                  labelStyle: TextStyle(color: Colors.white),
                   border: OutlineInputBorder(),
                 ),
                 initialValue: 'melpeters@gmail.com',
               ),
               SizedBox(height: 10),
               TextFormField(
+                style: TextStyle(color: Colors.white),
                 decoration: InputDecoration(
                   labelText: 'Password',
+                  labelStyle: TextStyle(color: Colors.white),
                   border: OutlineInputBorder(),
                 ),
                 initialValue: '************',
@@ -71,8 +77,10 @@ class Profile extends StatelessWidget {
               ),
               SizedBox(height: 10),
               TextFormField(
+                style: TextStyle(color: Colors.white),
                 decoration: InputDecoration(
                   labelText: 'Phone Number',
+                  labelStyle: TextStyle(color: Colors.white),
                   border: OutlineInputBorder(),
                 ),
                 initialValue: '01002578666',

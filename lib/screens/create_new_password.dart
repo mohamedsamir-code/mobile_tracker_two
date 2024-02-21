@@ -22,7 +22,7 @@ class _CreateNewPasswordState extends State<CreateNewPassword> {
     var confirmPasswordController = TextEditingController();
     var formValidate = GlobalKey<FormState>();
     return Container(
-      color: whiteColor,
+      color: thirdColor,
       child: Stack(
         children: [
           Scaffold(
@@ -115,7 +115,7 @@ class _CreateNewPasswordState extends State<CreateNewPassword> {
                     function: () async {
                       if (formValidate.currentState!.validate()) {
                         print(passwordController.text);
-                        var message = await provider.changePassword(passwordController.text);
+                        var message = await provider.changePassword(passwordController.text,confirmPasswordController.text);
                         //var m = await provider.verifyWithPhone(phoneController.text);
                          if(message == true){
                           Navigator.pushNamed(context, OtpVerification.routeName);

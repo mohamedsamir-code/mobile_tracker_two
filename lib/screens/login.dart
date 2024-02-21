@@ -6,6 +6,7 @@ import '../shared/app_provider.dart';
 import '../shared/components.dart';
 import '../shared/constant.dart';
 import '../shared/utils.dart';
+import 'forgot_password.dart';
 import 'home.dart';
 
 class Login extends StatefulWidget {
@@ -44,7 +45,7 @@ class _LoginState extends State<Login> {
     var emailController = TextEditingController();
     var formValidate = GlobalKey<FormState>();
     return Container(
-      color: whiteColor,
+      color: thirdColor,
       child: Stack(
         children: [
           Scaffold(
@@ -159,6 +160,24 @@ class _LoginState extends State<Login> {
                             });
                           },
                         ),
+                      ),
+                      SizedBox(
+                        height: 5,
+                      ),
+                      GestureDetector(
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 276.0),
+                          child: Text(
+                            'Forget Password',
+                            style: TextStyle(
+                              color: Color(0xffffffff),
+                              fontWeight: FontWeight.w400,
+                              fontSize: 12,
+                            ),
+                          ),
+                        ),
+                        onTap: () => Navigator.pushNamed(
+                            context, ForgotPassword.routeName),
                       ),
                       SizedBox(
                         height: 80,

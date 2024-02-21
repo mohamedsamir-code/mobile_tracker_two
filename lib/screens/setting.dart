@@ -97,7 +97,7 @@ class Setting extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 450.0,
+                    height: 400.0,
                   ),
                   InkWell(
                     onTap: () => Navigator.pushNamedAndRemoveUntil(

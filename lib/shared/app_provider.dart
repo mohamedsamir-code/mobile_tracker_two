@@ -23,7 +23,7 @@ class AppProvider extends ChangeNotifier {
   //   }
   // }
 
-  Future<dynamic> changePassword(String password)async{
+  Future<dynamic> changePassword(String password, String confirmPassword)async{
     var user = await FirebaseAuth.instance.currentUser!;
     user.updatePassword(password).then((_) {
       print('Successfully changed password');

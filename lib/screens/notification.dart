@@ -7,7 +7,7 @@ class Notifications extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: whiteColor,
+      color: thirdColor,
       child: Stack(
         children: [
           Scaffold(

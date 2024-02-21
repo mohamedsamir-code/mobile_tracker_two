@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_tracker_two/screens/home.dart';
 import 'package:provider/provider.dart';
 import 'package:mobile_tracker_two/screens/create_new_password.dart';
 import 'package:mobile_tracker_two/screens/today_trip.dart';
@@ -13,7 +14,7 @@ class OtpVerification extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: whiteColor,
+      color: thirdColor,
       child: Stack(
         children: [
           Scaffold(
@@ -77,7 +78,7 @@ class OtpVerification extends StatelessWidget {
                       textStyle: Colors.black,
                       background: primaryColor,
                       function: () {
-                        Navigator.pushNamedAndRemoveUntil(context, TodayTrip.routeName, (route) => false);
+                        Navigator.pushNamedAndRemoveUntil(context, Home.routeName, (route) => false);
                       }, text: 'Enter'
                       ,),
                   ],
